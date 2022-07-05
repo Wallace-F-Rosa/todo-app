@@ -1,3 +1,6 @@
 [submodule "todo-api"]
 	path = todo-api
 	url = git@github.com:Wallace-F-Rosa/todo-api.git
+[submodule "todo-service"]
+	path = todo-service
+	url = git@github.com:Wallace-F-Rosa/todo-service.git
