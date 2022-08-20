@@ -1,6 +1,6 @@
 [submodule "todo-user"]
 	path = todo-user
-  url = git@github.com:Wallace-F-Rosa/todo-user.git
+	url = git@github.com:Wallace-F-Rosa/todo-user.git
 [submodule "todo-tasks"]
 	path = todo-tasks
 	url = git@github.com:Wallace-F-Rosa/todo-tasks.git
