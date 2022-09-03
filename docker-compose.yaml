@@ -1,0 +1,38 @@
+services:
+  todo-tasks:
+    build: ./todo-tasks
+    ports:
+      - "3001:3001"
+    depends_on:
+      - postgres
+      - rabbitmq
+    environment:
+      DATABASE_URL: postgresql://postgres:postgres@192.168.92.22:5432/todo-tasks?schema=public
+      CLOUDAMQP_URL: amqp://192.168.92.21:5672
+    networks:
+      todo:
+        ipv4_address: 192.168.92.23
+  postgres:
+    image: postgres:14-alpine
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    networks:
+      todo:
+        ipv4_address: 192.168.92.22
+  rabbitmq:
+    image: rabbitmq:management-alpine
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      todo:
+        ipv4_address: 192.168.92.21
+networks:
+  todo:
+    ipam:
+      driver: default
+      config:
+        - subnet: "192.168.92.0/24"
+
