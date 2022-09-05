@@ -1,14 +1,13 @@
-# Todo App
+# Todo App (WORK IN PROGRESS)
 Web application to manage a todo list using an REST API, microservices and an front end application.
 
 # Services
 The backend will have the following services(each of them is a submodule of this project):
-- (todo-api) An REST API service that exposes all functionalities.
-- (todo-service) An Todo Service that allows creation, delition and update of tasks.
-- (todo-view) An Todo View Service that allows listing the tasks and getting the details of an specific task.
+- [**todo-user**](https://github.com/Wallace-F-Rosa/todo-user): service responsable to deal with user data and operations (sign up, login)
+- [**todo-tasks**](https://github.com/Wallace-F-Rosa/todo-tasks): service responsable to deal with tasks managment.
 
 # Interface
-The frontend (todo-front) allows use of the features using an visual interface.
+The **todo-front** allows use of the features using an web interface.
 
 # How to run the application
 Using docker compose:
