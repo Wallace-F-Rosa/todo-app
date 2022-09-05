@@ -1,5 +1,5 @@
 # Todo App (WORK IN PROGRESS)
-Web application to manage a todo list using an REST API, microservices and an front end application.
+Web application to manage a todo list using microservices exposing REST API's and an front end application.
 
 # Services
 The backend will have the following services(each of them is a submodule of this project):
