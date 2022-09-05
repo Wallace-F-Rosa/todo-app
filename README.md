@@ -4,7 +4,7 @@ Web application to manage a todo list using microservices exposing REST API's an
 # Services
 The backend will have the following services(each of them is a submodule of this project):
 - [**todo-user**](https://github.com/Wallace-F-Rosa/todo-user): service responsable to deal with user data and operations (sign up, login)
-- [**todo-tasks**](https://github.com/Wallace-F-Rosa/todo-tasks): service responsable to deal with tasks managment.
+- [**todo-tasks**](https://github.com/Wallace-F-Rosa/todo-tasks): service responsable to deal with tasks management.
 
 # Interface
 The **todo-front** allows use of the features using an web interface.
