@@ -1,5 +1,5 @@
 # Todo App (WORK IN PROGRESS)
-Web application to manage a todo list using microservices exposing REST API's and an front end application.
+Web application to manage a todo list using microservices exposing REST API's (with [Swagger](https://swagger.io/) documentation) and an front end application. Communication between services is message based using RabbitMQ.
 
 # Services
 The backend will have the following services(each of them is a submodule of this project):
@@ -28,4 +28,4 @@ yarn prisma migrate dev
 
 User service API should be running on [localhost:3000](localhost:3000).
 Task service API should be running on [localhost:3001](localhost:3001).
-Accessing the links should take you to swagger documentation of the apis.
+Accessing the links should take you to the Swagger documentation of the apis.
