@@ -26,7 +26,7 @@ services:
       todo:
         ipv4_address: 192.168.92.23
   postgres:
-    image: postgres:14-alpine
+    image: postgres:alpine
     environment:
       POSTGRES_PASSWORD: postgres
     ports:
