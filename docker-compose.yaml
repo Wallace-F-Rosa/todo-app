@@ -1,5 +1,6 @@
 services:
   todo-user:
+    container_name: todo-user
     build: ./todo-user
     ports:
       - "3000:3000"
@@ -26,6 +27,7 @@ services:
       todo:
         ipv4_address: 192.168.92.23
   postgres:
+    container_name: todo_db
     image: postgres:alpine
     environment:
       POSTGRES_PASSWORD: postgres
@@ -35,6 +37,7 @@ services:
       todo:
         ipv4_address: 192.168.92.22
   rabbitmq:
+    container_name: todo_broker
     image: rabbitmq:management-alpine
     ports:
       - "5672:5672"
