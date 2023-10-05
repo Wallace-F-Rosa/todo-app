@@ -7,7 +7,7 @@ The backend will have the following services(each of them is a submodule of this
 - [**todo-tasks**](https://github.com/Wallace-F-Rosa/todo-tasks): service responsable to deal with tasks management.
 
 # Interface
-The **todo-front** allows use of the features using an web interface.
+- [**todo-web**](https://github.com/Wallace-F-Rosa/todo-web): web interface to access todo-app features.
 
 # How to run the application
 Using docker compose:
