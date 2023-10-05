@@ -4,3 +4,6 @@
 [submodule "todo-tasks"]
 	path = todo-tasks
 	url = git@github.com:Wallace-F-Rosa/todo-tasks.git
+[submodule "todo-web"]
+	path = todo-web
+	url = git@github.com:Wallace-F-Rosa/todo-web.git
