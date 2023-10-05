@@ -14,18 +14,18 @@ services:
       todo:
         ipv4_address: 192.168.92.24
   todo-tasks:
-    build: ./todo-tasks
-    ports:
-      - "3001:3001"
-    depends_on:
-      - postgres
-      - rabbitmq
-    environment:
-      DATABASE_URL: postgresql://postgres:postgres@192.168.92.22:5432/todo-tasks?schema=public
-      CLOUDAMQP_URL: amqp://192.168.92.21:5672
-    networks:
-      todo:
-        ipv4_address: 192.168.92.23
+  build: ./todo-tasks
+  ports:
+  - "3001:3001"
+  depends_on:
+  - postgres
+  - rabbitmq
+  environment:
+  DATABASE_URL: postgresql://postgres:postgres@192.168.92.22:5432/todo-tasks?schema=public
+  CLOUDAMQP_URL: amqp://192.168.92.21:5672
+  networks:
+  todo:
+  ipv4_address: 192.168.92.23
   postgres:
     container_name: todo_db
     image: postgres:alpine
