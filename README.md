@@ -1,13 +1,10 @@
-# Todo App (WORK IN PROGRESS)
+# Todo App
 Web application to manage a todo list using microservices exposing REST API's (with [Swagger](https://swagger.io/) documentation) and an front end application. Communication between services is message based using RabbitMQ.
 
 # Services
 The backend will have the following services(each of them is a submodule of this project):
 - [**todo-user**](https://github.com/Wallace-F-Rosa/todo-user): service responsable to deal with user data and operations (sign up, login)
 - [**todo-tasks**](https://github.com/Wallace-F-Rosa/todo-tasks): service responsable to deal with tasks management.
-
-# Interface
-- [**todo-web**](https://github.com/Wallace-F-Rosa/todo-web): web interface to access todo-app features.
 
 # How to run the application
 Using docker compose:
